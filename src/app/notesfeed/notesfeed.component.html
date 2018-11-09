@@ -1,3 +1,79 @@
-<p>
-  notesfeed works!
-</p>
+	<style type="text/css">
+	.note{
+		width: 100%;
+		padding: 30px;
+		position: relative;
+		overflow: hidden;
+		margin: 15px 0px; 
+	}
+
+	.note::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 1000%;
+		height: 5000%;
+		transform: rotate(45deg) translate(-25px,50%);   /* 25px for the cut height/width */
+		transform-origin: right bottom;
+		background: #9ae2e0;
+		opacity: 0.7;
+		z-index: -1;
+		border: 2px solid black;
+	}
+	.note .name_tag{
+		font-weight: bold;
+		padding-bottom: 15px;
+	}
+	#map_view{
+		position: relative;
+		z-index: 1000;
+	}
+	#add_section{
+		position: relative;
+		background: white;
+		z-index: 1000;
+	}
+</style>
+<div class="container">
+	<div id="add_section" class="p-3 border border-primary">
+		<form>
+		    <div class="form-group">
+			    <label for="txtMessage">Your message</label>
+			    <textarea class="form-control" style="resize: none;" id="txtMessage" rows="3"></textarea>
+			</div>
+			<div class="text-right">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+	<div id="map_view"><img src="assets/map.png" class="img-fluid" alt="Responsive image"></div>
+	<div id="news_feed">
+		<div class="note">
+			<div class="name_tag">name goes here</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+		<div class="note">
+			<div class="name_tag">name goes here</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+		<div class="note">
+			<div class="name_tag">name goes here</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+		<div class="note">
+			<div class="name_tag">name goes here</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+
+	</div>
+
+	<div id="setting_section">
+		
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+	
+</script>
